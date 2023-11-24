@@ -11,7 +11,7 @@ def test_add_student():
         students_data = file.read()
         assert "John Doe" in students_data
 
-test_add_student()
+
 
 def test_remove_student():
     student_id = "123"
@@ -35,4 +35,6 @@ def test_edit_student():
         students_data = file.read()
         assert new_name in students_data
 
+test_add_student()
+test_remove_student()
 test_edit_student()
